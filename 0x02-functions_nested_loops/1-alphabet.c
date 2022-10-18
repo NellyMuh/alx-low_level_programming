@@ -10,5 +10,9 @@
 
 int main(void)
 {
-	
+	int alp = "abcdefghijklmnopqrstuvwxyz";
+
+	putchar(alp);
+	putchar('\n');
+	return(0);
 }
