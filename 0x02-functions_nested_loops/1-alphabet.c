@@ -1,6 +1,6 @@
-#include<stdio.h>
+#include "main.h"
+
 /**
- *
  * main - prints the alphabet in lower case, followed by a new line
  *
  *
@@ -8,11 +8,15 @@
  *
  **/
 
-int main(void)
-{
-	int alp = "abcdefghijklmnopqrstuvwxyz";
 
-	putchar(alp);
-	putchar('\n');
-	return(0);
+void print_alphabet(void)
+{
+	char letter = 'a';
+
+	while (letter <= 'z')
+	{
+	_putchar(letter);
+	letter++;
+	}
+	_putchar('\n');
 }
