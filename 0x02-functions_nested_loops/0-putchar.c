@@ -10,7 +10,5 @@
 int main(void)
 {
 	_putchar('c');
-
-	putchar('\n');
 	return (0);
 }
