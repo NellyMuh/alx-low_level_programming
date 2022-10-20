@@ -17,6 +17,6 @@ int mul(int a, int b)
 
 	a *b = result;
 
-	return (result);
+	return result;
 }
 
