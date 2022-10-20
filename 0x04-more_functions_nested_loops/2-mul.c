@@ -7,7 +7,7 @@
  * @a: checks character
  * @b: checks character
  *
- * Return: 0
+ * Return: a * b result
  **/
 
 
