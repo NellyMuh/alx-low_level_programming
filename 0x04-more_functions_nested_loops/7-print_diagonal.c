@@ -6,9 +6,9 @@
  * Return: nothing
  **/
 
-void  print_diagonal(void)
+void  print_diagonal(int n)
 {
-	int c , i;
+	int c, i;
 
 	for (i = 0; i < n; i++)
 	{
