@@ -6,7 +6,7 @@
  * Return: nothing
  **/
 
-void  print_diagonal(int n)
+void print_diagonal(int n)
 {
 	int c, i;
 
@@ -16,15 +16,15 @@ void  print_diagonal(int n)
 		{
 			if (c != i)
 			{
-			_putchar(' ');
+				_putchar(' ');
 			}
-		else
+			else
 			{
-			_putchar('\\');
+				_putchar('\\');
 			}
 		}
-	_putchar('\n');
-}
-if (n <= 0)
-	_putchar('\n');
+		_putchar('\n');
+	}
+	if (n <= 0)
+		_putchar('\n');
 }
