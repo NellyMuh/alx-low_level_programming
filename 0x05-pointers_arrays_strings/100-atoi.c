@@ -35,4 +35,4 @@ int _atoi(char *s)
 	}
 	m = m * -1;
 	return (n * m);
-
+}
