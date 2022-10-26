@@ -1,4 +1,5 @@
 #include <time.h>
+#include<stdio.h>
 /**
  * main - entry point
  * Description: my keygen.
