@@ -1,19 +1,22 @@
 #include "main.h"
 
-/*
- * rev_aray - prints an array in reverse
- *@a: array of integers.
- *@n: the number of elements to swap
- * Retun : Always success
- **/
+/**
+* reverse_array - a function that reverses the content of an array of integers
+* @a: integer
+* @n: integer
+* Return: nothing
+**/
 
 void reverse_array(int *a, int n)
 {
-	int i, a[];
-	
-	for ( i = n-1; i > 0; i--)
+	int i, b;
+	int j = n - 1;
+
+	for (i = 0; i < j ; i++, j--)
 	{
-		printf("the reverse array is: %d\n", a[i]);
-	}	
+		b = a[i];
+		a[i] = b[i];
+		a[j] = b;
+	}
 	return (0);
 }
