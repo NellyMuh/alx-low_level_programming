@@ -3,43 +3,42 @@
 #include "main.h"
 
 /**
-* string_nconcat - concatentates two strings using the newly allocated memory
-* @s1: first string
-* @s2: second string
-* @n: unsigned int
-* Return: a pointer to 2 string concat..
-**/
-
+ * string_nconcat - function that concatenates two strings
+ * @s1: First string
+ * @s2: the second string
+ * @n: The index
+ * Return: The character pointer
+ */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int l, i;
-	unsigned int j;
 	char *p;
-
-	l = 0;
-	i = 0;
-	j = 0;
+	unsigned int k1 = 0, k2 = 0, i;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	while (s1[l])
-		l += 1;
-	p = malloc(l + n + 1);
+	while (s1[k1] != '\0')
+	{
+		k1++;
+	}
+	while (s2[k2] != '\0')
+	{
+		k2++;
+	}
+	if (n > k2)
+		n = k2;
+	p = malloc((k1 + n + 1) * sizeof(char));
 	if (p == NULL)
-		return (NULL);
-	while (s1[i])
+		return (0);
+	for (i = 0; i < k1; i++)
 	{
 		p[i] = s1[i];
-		i += 1;
 	}
-
-	while (j < n)
+	for (; i < (k1 + n); i++)
 	{
-		p[i + j] = s2[j];
-		j += 1;
+		p[i] = s2[i - k1];
 	}
-	p[i + j] = '\0';
+	p[i] = '\0';
 	return (p);
 }
