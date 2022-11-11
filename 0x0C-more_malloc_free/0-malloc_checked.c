@@ -7,11 +7,9 @@
 **/
 void *malloc_checked(unsigned int b)
 {
-	unsigend int *;
+	void *ptr = malloc(b);
 
-	n = malloc(b);
-
-	if (n == NULL)
+	if (ptr == NULL)
 		exit(98);
-	return (n);
+	return (ptr);
 }
